@@ -57,9 +57,6 @@ function Work() {
       ))}
       </div>
     </section>
-
-
-    
   )
 }
 

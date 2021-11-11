@@ -1,17 +1,18 @@
+import React, { useState } from 'react';
 import './App.css';
 
-// Dependencies
+// Components
 import Header from './components/Header';
 import Aside from './components/Aside';
 import Main from './components/Main';
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Aside />
       <Main />
-    </div>
+    </React.Fragment>
   );
 }
 
