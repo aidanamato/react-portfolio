@@ -45,7 +45,7 @@ function Work() {
       <h2 className="section-title">Work</h2>
       <div className="work-flex">
       {projects.map(project => (
-        <div className="project">
+        <div className="project" key={project.title}>
           <a href={project.link} target="_blank" rel="noreferrer">
             <img src={project.image} alt='' />
           </a>

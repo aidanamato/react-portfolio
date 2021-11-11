@@ -24,6 +24,7 @@ body {
 
 section {
   padding: 25px 8px;
+  min-height: calc(100vh - 196px);
 }
 
 a {
@@ -116,18 +117,8 @@ aside a {
 /* About Styles End */
 
 /* Work Styles Start */
-.work::before {
-  display: block;
-  content: "";
-  width: 45%;
-  margin: 0 auto;
-  border-top: solid 1px var(--color-1);
-  padding-bottom: 60px;
-}
-
 .work {
   background-color: var(--color-6);
-  padding-top: 0;
 }
 
 .work-flex {
@@ -211,8 +202,7 @@ aside a {
 
 /* Contact Styles Start */
 .contact-me {
-  background-color: var(--color-2);
-  padding-top: 10px;
+  background-color: var(--color-6);
 }
 
 .contact-flex {
@@ -266,6 +256,9 @@ footer p {
 
 /* Media Queries Start */
 @media screen and (min-width: 576px) {
+  section {
+    min-height: calc(100vh - 168px);
+  }
 
   /* Header Styles Start */
   header {
@@ -282,6 +275,13 @@ footer p {
       width: 80%;
       line-height: 1.8;
   }
+  /* About Styles End */
+
+  /* Footer Styles Start */
+  footer {
+    min-height: 75px
+  }
+  /* Footer Styles End */
 }
 
 @media screen and (min-width: 769px) {
@@ -289,6 +289,7 @@ footer p {
   /* Utility Classes Start */
   section {
       padding: 25px 12px;
+      min-height: calc(100vh - 183px);
   }
 
   /* Header Styles Start */
@@ -356,12 +357,14 @@ footer p {
   .work-flex {
       width: 75%;
   }
+  /* Work Styles End */
 }
 
 @media screen and (min-width: 981px) {
  
   section {
       padding: 25px 16px;
+      min-height: calc(100vh - 301px);
   }
 
   .section-title {
@@ -426,6 +429,10 @@ footer p {
   /* Contact Styles End */
 
   /* Footer Styles Start */
+  footer {
+    height: 106px;
+  }
+  
   footer a {
       width: 12%;
   }
@@ -434,4 +441,5 @@ footer p {
       font-size: initial;
       margin-top: 8px;
   }
+  /* Footer Styles End */
 }

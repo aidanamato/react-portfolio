@@ -6,12 +6,12 @@ import Work from './Work';
 import Contact from './Contact';
 import Footer  from "./Footer";
 
-function Main() {
+function Main({mainContent}) {
   return (
     <div className="main-content">
-      <About />
-      <Work />
-      <Contact />
+      {mainContent === 'about' && <About />}
+      {mainContent === 'work' && <Work />}
+      {mainContent === 'contact' && <Contact />}
       <Footer />
     </div>
   )

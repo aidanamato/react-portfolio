@@ -7,11 +7,13 @@ import Aside from './components/Aside';
 import Main from './components/Main';
 
 function App() {
+  const [mainContent, setMainContent] = useState('about');
+
   return (
     <React.Fragment>
       <Header />
-      <Aside />
-      <Main />
+      <Aside mainContent={mainContent} setMainContent={setMainContent} />
+      <Main mainContent={mainContent} />
     </React.Fragment>
   );
 }
