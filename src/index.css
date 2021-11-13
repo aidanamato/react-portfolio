@@ -6,6 +6,7 @@
   --color-3: #3a5874;
   --color-3-light: #3a5874a6;
   --color-3-opaque: #3a587425;
+  --color-3-bright: #8ebae425;
   --color-4: #7894b0;
   --color-5: #94a6bb;
   --color-5-bright: #ccd5df;
@@ -209,6 +210,18 @@ aside p {
   background-color: var(--color-5-bright)
 }
 
+.error-message {
+  font-size: 12px;
+  text-align: center;
+  color: red;
+}
+
+.success-message {
+  font-size: 12px;
+  text-align: center;
+  color: green;
+}
+
 .contact-form label {
   display: block;
   font-size: 12px;
@@ -217,8 +230,11 @@ aside p {
 .contact-form input, .contact-form textarea {
   width: 100%;
   border: none;
+  border-radius: 12px;
   resize: none;
-  background-color: var(--color-3-opaque);
+  background-color: var(--color-6);
+  padding: 4px;
+  font-family: inherit;
 }
 
 .contact-form button {
