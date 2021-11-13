@@ -14,11 +14,14 @@ You can visit my live portfolio [here](https://aidanamato.github.io/professional
 ## Credits
 
 - [React](https://reactjs.org/)
+- Google Fonts
+  - [Montserrat](https://fonts.google.com/specimen/Montserrat)
 - Free PNG Logos
   - [Linkedin Logo](https://www.freepnglogos.com/images/linkedin-logo-png-1825.html)
   - [GitHub Logo](https://www.freepnglogos.com/images/512x512-logo-27148.html)
 - Awesome Font Icons
   - [file-pdf](https://fontawesome.com/v5.15/icons/file-pdf?style=regular)
+- Favicon created with [favicon.io](https://favicon.io/)
 
 ## Author
 
