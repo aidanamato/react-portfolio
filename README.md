@@ -18,7 +18,7 @@ You can visit my live portfolio [here](https://aidanamato.github.io/professional
   - [Linkedin Logo](https://www.freepnglogos.com/images/linkedin-logo-png-1825.html)
   - [GitHub Logo](https://www.freepnglogos.com/images/512x512-logo-27148.html)
 - Awesome Font Icons
-  -[file-pdf](https://fontawesome.com/v5.15/icons/file-pdf?style=regular)
+  - [file-pdf](https://fontawesome.com/v5.15/icons/file-pdf?style=regular)
 
 ## Author
 
