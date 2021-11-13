@@ -12,7 +12,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <Aside mainContent={mainContent} setMainContent={setMainContent} />
+      <Aside setMainContent={setMainContent} />
       <Main mainContent={mainContent} />
     </React.Fragment>
   );

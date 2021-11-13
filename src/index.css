@@ -25,11 +25,13 @@ body {
 section {
   padding: 25px 8px;
   min-height: calc(100vh - 196px);
+  background-color: var(--color-6);
 }
 
 a {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 .section-title {
@@ -82,17 +84,14 @@ aside ul {
   list-style: none;
 }
 
-aside a {
+aside p {
   color: var(--color-2);
   font-weight: bold;
+  cursor: pointer;
 }
 /* Aside Styles End */
 
 /* About Styles Start */
-.about {
-  background-color: var(--color-6);
-}
-
 .about-flex {
   display: flex;
   justify-content: space-evenly;
@@ -117,10 +116,6 @@ aside a {
 /* About Styles End */
 
 /* Work Styles Start */
-.work {
-  background-color: var(--color-6);
-}
-
 .work-flex {
   display: flex;
   justify-content: space-between;
@@ -132,8 +127,9 @@ aside a {
 
 .project {
   position: relative;
-  width: 48%;
-  margin: 4px 0;
+  width: 100%;
+  margin: 4px 0 8px;
+  line-height: 1.5;
   opacity: 0.75;
 }
 
@@ -149,7 +145,7 @@ aside a {
   opacity: 0.75;
   object-fit: fill;
   width: 100%;
-  height: 100%;
+  height: 175px;
   border: solid 2px var(--color-3);
   border-radius: 5%;
 }
@@ -174,49 +170,67 @@ aside a {
   font-size: 14px;
 }
 
-.work-flex .project:nth-child(1) {
-  width: 100%;
-  margin-bottom: 8px;
-  line-height: 1.5;
+.project-links a {
+  display: inline;
 }
 
-.work-flex .project:nth-child(1) img {
-  width: 100%;
+.project-links button {
+  background-color: var(--color-2);
+  width: 80px;
+  padding: 4px;
+  margin-top: 5px;
+  border: none;
   border-radius: 3%;
-  border-width: 4px;
 }
 
-.work-flex .project:nth-child(1) .project-text {
-  padding: 10px 0;
-  margin-top: 34px;
+.project-links button:hover {
+  opacity: 0.75;
 }
 
-.work-flex .project:nth-child(1) h3 {
-  font-size: 24px;
+.project-links button:active {
+  opacity: 1;
 }
 
-.work-flex .project:nth-child(1) p {
-  font-size: 18px;
+.live {
+  margin-right: 12px;
+}
+
+.repository {
+  margin-left: 12px;
 }
 /* Work Styles End */
 
 /* Contact Styles Start */
-.contact-me {
-  background-color: var(--color-6);
+.contact-form {
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: var(--color-5-bright)
 }
 
-.contact-flex {
-  display: flex;
-  justify-content: space-around;
-  line-height: 1.5;
+.contact-form label {
+  display: block;
+  font-size: 12px;
 }
 
-.contact-text h3 {
-  color: var(--color-1-dark);
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  background-color: var(--color-3-opaque);
 }
 
-.contact-text p {
-  color: var(--color-3)
+.contact-form button {
+  display: block;
+  width: 50%;
+  padding: 4px;
+  margin: 6px auto 0;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--color-3);
+  color: var(--color-2);
+  font-size: 12px;
 }
 /* Contact Styles End */
 
@@ -276,6 +290,55 @@ footer p {
       line-height: 1.8;
   }
   /* About Styles End */
+
+  /* Work Styles Start */
+  .project {
+    width: 48%;
+    margin: 4px 0;
+  }
+
+  .project img {
+    height: 100%;
+  }
+
+  .project:nth-child(1) {
+    width: 100%;
+    margin: 4px 0 8px;
+    line-height: 1.5;
+  }
+
+  .project:nth-child(1) img {
+    width: 100%;
+    height: inherit;
+    border-radius: 3%;
+    border-width: 4px;
+  }
+
+  .project:nth-child(1) .project-text {
+    padding: 10px 0;
+    margin-top: 34px;
+  }
+  
+  .project:nth-child(1) h3 {
+    font-size: 24px;
+  }
+  
+  .project:nth-child(1) p {
+    font-size: 18px;
+  }
+
+  .project:nth-child(1) .project-links button {
+    width: 120px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  /* Work Styles End */
+
+  /* Contact Styles Start */
+  .contact-form {
+    width: 60%;
+  }
+  /* Contact Styles End */
 
   /* Footer Styles Start */
   footer {
@@ -357,6 +420,31 @@ footer p {
   .work-flex {
       width: 75%;
   }
+
+  .work-flex .project:nth-child(1) {
+    width: 100%;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .work-flex .project:nth-child(1) img {
+    width: 100%;
+    border-radius: 3%;
+    border-width: 4px;
+  }
+  
+  .work-flex .project:nth-child(1) .project-text {
+    padding: 10px 0;
+    margin-top: 34px;
+  }
+  
+  .work-flex .project:nth-child(1) h3 {
+    font-size: 24px;
+  }
+  
+  .work-flex .project:nth-child(1) p {
+    font-size: 18px;
+  }
   /* Work Styles End */
 }
 
@@ -413,19 +501,19 @@ footer p {
   /* Work Styles End */
 
   /* Contact Styles Start */
-  .contact-flex {
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
+  .contact-form {
+    width: 40%;
   }
 
- .contact-flex .contact-text:nth-child(2) {
-      padding-top: 12px;
+  .contact-form label, .contact-form button {
+    font-size: 16px;
   }
 
-  .contact-text {
-      width: 75%;
+  .contact-form input {
+    padding: 4px;
   }
+
+
   /* Contact Styles End */
 
   /* Footer Styles Start */

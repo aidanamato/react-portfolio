@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Aside({mainContent, setMainContent}) {
+function Aside({setMainContent}) {
   
   function setContent(event) {
     switch (event.target.textContent) {
@@ -10,8 +10,11 @@ function Aside({mainContent, setMainContent}) {
       case 'Work':
         setMainContent('work');
         break;
-      case 'Contact Me' :
+      case 'Contact Me':
         setMainContent('contact');
+        break;
+      case 'Resume':
+        setMainContent('resume');
         break;
       default: 
         setMainContent('about');
@@ -21,18 +24,21 @@ function Aside({mainContent, setMainContent}) {
   return (
     <aside>
       <div className="logo">
-        <p>A</p>
+        <p><a href="/">A</a></p>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="#about" onClick={setContent} >About</a>
+            <p onClick={setContent} >About</p>
           </li>
           <li>
-            <a href="#work" onClick={setContent} >Work</a>
+            <p onClick={setContent} >Work</p>
           </li>
           <li>
-            <a href="#contact-me" onClick={setContent} >Contact Me</a>
+            <p onClick={setContent} >Contact Me</p>
+          </li>
+          <li>
+            <p onClick={setContent} >Resume</p>
           </li>
         </ul>
       </nav>

@@ -4,16 +4,15 @@ function Contact() {
   return (
     <section id="contact-me" className="contact-me">
       <h2 className="section-title">Contact Me</h2>
-      <div className="contact-flex">
-        <div className="contact-text">
-          <h3>Phone:</h3>
-          <a href="tel:8509809094"><p>(850) 980-9094</p></a>
-        </div>
-        <div className="contact-text">
-          <h3>Email:</h3>
-          <a href="mailto:aidanamato@comcast.net"><p>aidanamato@comcast.net</p></a>
-        </div>
-      </div>
+      <form className="contact-form" name="contact-form">
+        <label for="name">Name</label>
+        <input name="name" type="text" for="contact-me"></input>
+        <label for="email">Email</label>
+        <input name="email" type="email" for="contact-me"></input>
+        <label for="message">Message</label>
+        <textarea name="message" for="contact-me" rows="4"></textarea>
+        <button type="submit" for="section-title">Submit</button>
+      </form>
     </section>
   )
 }
