@@ -9,7 +9,7 @@ Welcome to my portfolio! I built my portfolio using the React framework, which a
 
 ## Deployment
 
-You can visit my live portfolio [here](https://aidanamato.github.io/professional-portfolio/).
+You can visit my live portfolio [here](https://aidanamato.github.io/react-portfolio/).
 
 ## Credits
 
