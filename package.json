@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/aidanamato/react-portfolio",
+  "homepage": "https://aidanamato.github.io/react-portfolio/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
