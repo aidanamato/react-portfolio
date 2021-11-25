@@ -6,6 +6,7 @@ import techTalkImg from '../../../assets/images/tech-talk-screenshot.png';
 import runBuddyImg from '../../../assets/images/run_buddy_screenshot.png';
 import teamProfileGenImg from '../../../assets/images/team-profile-generator.png';
 import employeeTrackerImg from '../../../assets/images/employee-tracker.png';
+import bookSearchImg from '../../../assets/images/book-search-screenshot.png';
 
 const projects = [
   {
@@ -23,11 +24,11 @@ const projects = [
     languages: 'CSS/JavaScript/Bootstrap'
   },
   {
-    link: 'https://aidanamato.github.io/run-buddy/',
-    repo: 'https://github.com/aidanamato/run-buddy',
-    image: runBuddyImg,
-    title: 'Run Buddy',
-    languages: 'HTML/CSS'
+    link: 'https://vast-harbor-30334.herokuapp.com/',
+    repo: 'https://github.com/aidanamato/book-search-engine',
+    image: bookSearchImg,
+    title: 'Book Search Engine',
+    languages: 'React/GraphQL/Apollo'
   },
   {
     link: 'https://github.com/aidanamato/team-profile-generator',
@@ -37,10 +38,11 @@ const projects = [
     languages: 'JavaScript/CSS'
   },
   {
-    repo: 'https://github.com/aidanamato/employee-tracker',
-    image: employeeTrackerImg,
-    title: 'Employee Tracker',
-    languages: 'JavaScript/Express'
+    link: 'https://aidanamato.github.io/run-buddy/',
+    repo: 'https://github.com/aidanamato/run-buddy',
+    image: runBuddyImg,
+    title: 'Run Buddy',
+    languages: 'HTML/CSS'
   }
 ]
 
@@ -57,8 +59,7 @@ function Work() {
             <h3>{project.title}</h3>
             <p>{project.languages}</p>
             <div className="project-links">
-              {/* If project is deployed live create a live button on it's card */}
-              {project.link && <a href={project.link} target="_blank" rel="noreferrer"><button className="live">Live</button></a>}
+              <a href={project.link} target="_blank" rel="noreferrer"><button className="live">Live</button></a>
               <a href={project.repo} target="_blank" rel="noreferrer"><button className="repository">Repository</button></a>
             </div>
           </div>
