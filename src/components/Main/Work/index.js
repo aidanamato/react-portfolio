@@ -5,7 +5,6 @@ import campfireImg from '../../../assets/images/campfire-screenshot.png';
 import techTalkImg from '../../../assets/images/tech-talk-screenshot.png';
 import runBuddyImg from '../../../assets/images/run_buddy_screenshot.png';
 import teamProfileGenImg from '../../../assets/images/team-profile-generator.png';
-import employeeTrackerImg from '../../../assets/images/employee-tracker.png';
 import bookSearchImg from '../../../assets/images/book-search-screenshot.png';
 
 const projects = [
